@@ -25,6 +25,9 @@ bootJar {
 repositories{
     mavenCentral()
 }
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 
 dependencies{
     compile("org.springframework.boot:spring-boot-starter-web")
@@ -35,5 +38,5 @@ dependencies{
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
 }
